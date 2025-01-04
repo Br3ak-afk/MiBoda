@@ -1,0 +1,124 @@
+/* styles.css */
+.sparkles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1; /* Debajo del contenido */
+}
+
+.sparkle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: radial-gradient(circle, #f7bbbb, rgb(233, 60, 60));
+  border-radius: 50%;
+  opacity: 0;
+  animation: sparkle-animation 3s infinite ease-in-out;
+}
+
+@keyframes sparkle-animation {
+  0% {
+    transform: translateY(0) scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.5);
+  }
+}
+
+.envelope {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 100%;
+  height: 50vh;
+  cursor: pointer;
+}
+
+.envelope-flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.envelope:hover .envelope-flap {
+  transform: rotateX(-90deg);
+}
+
+.envelope-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.envelope-text {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playwrite GB J Guides", cursive;
+  font-weight: 400;
+  font-style: italic;
+  color: #b02e0c;
+}
+.envelope-image{
+  filter: drop-shadow(5px 5px 20px rgba(207, 163, 174, 1));
+  z-index: 999;
+}
+.envelope-image:hover {
+  transform: rotate(360deg);
+  transition: transform 1s ease-in-out;
+}
+
+.x{
+  width: 100vw;
+}
+
+.container {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen para cubrir toda el área */
+  z-index: -1;
+  opacity: .4;
+}
+
+
+@media (min-width: 1024px) {
+  .envelope{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 50%;
+    height: 50vh;
+  }
+  body{
+    display: flex;
+  }
+}

@@ -1,0 +1,84 @@
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+}
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.playwrite-gb-j-guides-regular {
+  font-family: "Playwrite GB J Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playwrite-gb-j-guides-regular-italic {
+  font-family: "Playwrite GB J Guides", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+.Flores{
+  position: absolute;
+  width: 60%;
+
+  top: -5rem;
+  left: -2rem;
+}
+.Flores2{
+  position: absolute;
+  width: 60%;
+
+  bottom: -2rem;
+  right: -2rem;
+}
+.secPrin{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+body{
+  background: -webkit-linear-gradient(176deg, #ededed,#ffe0ea);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(176deg, #ededed,#ffe0ea);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+}
+@media (min-width: 768px) {
+  .Flores{
+    position: absolute;
+    width: 40%;
+  
+    top: -3rem;
+    left: -4rem;
+  }
+  .Flores2{
+    position: absolute;
+    width: 50%;
+  
+    bottom: -3rem;
+    right: -4rem;
+  }
+  .secPrin{
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Flores{
+    position: absolute;
+    width: 40%;
+  
+    top: -5rem;
+    left: -8rem;
+  }
+  .Flores2{
+    position: absolute;
+    width: 50%;
+  
+    bottom: -5rem;
+    right: -8rem;
+  }
+  .secPrin{
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+}
